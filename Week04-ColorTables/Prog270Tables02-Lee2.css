@@ -11,10 +11,41 @@ header {
     background-color: #00AA00;
     color: #BBFFBB; 
 }
-
-article {
+article 
+{ 
+    margin: 0 auto; max-width: 700px; width: 93%; 
     background-color: #00FF00;
     color: #008800;     
+}
+
+/* Now we adapt for a small screen! */ 
+@media screen and (min-width: 600px) 
+{ 
+  article {
+    background-color: #00FF00;
+    color: #008800;     
+}
+
+} 
+
+/* Adapt for a desktop */ 
+@media screen and (min-width: 860px) 
+{ 
+article {
+    background-color: #FF0000;
+    color: #008800;     
+}
+
+} 
+
+/* The full blown design on a desktop */ 
+@media screen and (min-width: 1200px) 
+{ 
+article {
+    background-color: #0000FF;
+    color: #008800;     
+}
+
 }
 
 .position01 {
@@ -37,3 +68,6 @@ article {
     background-color: #0000FF;
     font-weight:bold;
 }
+
+
+
